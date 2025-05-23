@@ -24,6 +24,23 @@
             margin-bottom: 40px;
             padding: 40px 0;
         }
+
+        .logo-link {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 100;
+        }
+
+        .logo {
+        height: 60px; /* Можете змінити розмір за потребою */
+        width: auto;
+        transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+        transform: scale(1.05);
+        }
         
         .header h1 {
             font-size: 3rem;
@@ -555,6 +572,13 @@
         }
         
         @media (max-width: 768px) {
+            .logo {
+                height: 50px;
+            }
+            .logo-link {
+                top: 10px;
+                left: 10px;
+            }
             .repository-row {
                 flex-direction: column;
             }
